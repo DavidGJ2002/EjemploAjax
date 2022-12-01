@@ -1,0 +1,127 @@
+.anuncio{
+    background: linear-gradient(135deg, #15384A 30%, #98021D 60%, #221E2F);
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    padding: 2em 2.125em;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 0.5rem;
+    display: none;
+    color:white;
+}
+
+.anuncio section h3{
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1em;
+}
+.anuncio button{
+    display: block;
+    background-color: transparent;
+    font-size: 2rem;
+    color: gray;
+    margin:  0 0 1.25em auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.anuncio p{
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+    margin: 1.25em 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.contenedor {
+  color: white;
+  text-align: center;
+  margin-top: 4%;
+}
+.rel {
+  width: 10.2em;
+  height: 9em;
+  padding: .5em 0px .25em 0px;
+  text-align: center;
+  display: inline-block;
+  margin: .5em;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+.rel>div{
+  font-size: 3.125em;
+  font-family: 'Chela One', sans serif;
+  animation: fade 3s;
+  margin-top: 5px;
+}
+.rel>div>h3 {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: normal;
+}
+.h3 {
+  bottom: 0;
+  margin: 0 auto ;
+}
+.contenido {
+  width: 80%;
+  margin: 0 auto;
+  border: 0px solid black;
+  z-index: 10;
+}
+
+.numeros {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 4em;
+  transition: .3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+.rel{
+  display: inline-block;
+}
+
+@media (max-width: 450px) {
+  .popup{
+    height: 70%;
+  }
+  .contenedor {
+    margin-top: 20%;
+  }
+
+  .rel {
+    height: 8em;
+    width: 7em;
+  }
+  .rel>div{
+    font-size: 45px;
+  }
+  .rel>div>h3 {
+    font-size: 15px;
+    margin-top: 0px;
+  }
+
+  .numeros{
+    font-size: 2em;
+  }
+}
+@keyframes trannum {
+    0%   {
+      opacity: 0;
+  }
+    30%   {
+      opacity: 0;
+  }
+    100% {
+      opacity: 1;
+  }
+}

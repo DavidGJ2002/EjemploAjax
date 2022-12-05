@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="David Grande Valeria Pimentel">
+    <meta name="description" content="Página principal">
+    <title>Muggle´s Acceso</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <link rel="stylesheet" href="css/estilocon.css">
+    <script src="js/inises.js" defer></script>
+    <script src="js/apliajax.js" defer></script>
+  </head>
+  <body>
+
+      <header>
+        <h1 id="he1">The magic muggle's world</h1>
+        <nav id="navegap">
+          <ul>
+            <li><a href="principal.html">Inicio</a></li>
+            <li><a href="contacta.html">Contactanos</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+        <section id="formulario">
+          <h1>INICIAR SESIÓN</h1>
+
+
+          <form method="post" name="formlogin" onsubmit="validateForm()">
+
+            <p>
+              <label for="mail">
+                <input type="email" name="usermail" placeholder="Escribe tu correo electrónico">
+              </label>
+            </p>
+
+            <p>
+              <label for="contra">
+                <input type="password" name="userpassword" placeholder="Contraseña">
+              </label>
+            </p>
+
+            <button  type="submit" name="btn-enviar" id="botonenv">Iniciar sesión</button>
+
+          </form>
+
+          <div id="demo">
+
+          </div>
+        </section>
+  </body>
+</html>
